@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<product  xmlns="http://www.ibm.com/maximo/product.xml">
+	<name>LabelPro for Maximo by Asset Partners</name>
+	<version>
+		<major>8</major>
+		<minor>0</minor>
+		<modlevel>0</modlevel>
+		<patch>0</patch>
+		<build>20710413-0003</build>
+	</version>
+	<dbmaxvarname>APLABELPRO</dbmaxvarname>
+	<dbscripts>labelpro</dbscripts>
+	<dbversion>V8000-10</dbversion>
+	<lastdbversion>V8000-00</lastdbversion>
+	<extensions>
+		
+	</extensions>
+</product>

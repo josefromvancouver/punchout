@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script SYSTEM "script.dtd">
+<script author="DBCInsertGenerator" scriptname="V7600_09"> 
+    <description>Insert Statment for maxprop </description>
+    <statements>
+    <freeform description="76-->80 upgrade">
+    	<sql target="all">
+    		delete from maxprop where propname = 'mxe.assetpartners.license';
+    		update maxobject set classname = 'assetpartners.app.labelpro.LabelProAssignmentSet' where objectname ='LABELPROASSIGNMENT';
+		update maxobject set classname = 'assetpartners.app.labelpro.LabelProPrintSet' where objectname ='LABELPROPRINT';
+		update maxobject set classname = 'assetpartners.app.labelpro.LabelProReceiptSet' where objectname ='LABELPRORECEIPT';
+    	</sql>
+    </freeform>
+        <insert table="maxprop">
+            <insertrow>
+ 		        <columnvalue column="propname" string="mxe.assetpartners.license"/>
+ 		        <columnvalue column="description" string="AssetPartners License"/>
+ 		        <columnvalue column="maxtype" string="ALN"/>
+ 		        <columnvalue column="globalonly" boolean="false"/>
+ 		        <columnvalue column="instanceonly" boolean="false"/>
+ 		        <columnvalue column="liverefresh" boolean="true"/>
+ 		        <columnvalue column="encrypted" boolean="false"/>
+ 		        <columnvalue column="nullsallowed" boolean="true"/>
+ 		        <columnvalue column="securelevel" string="SECURE"/>
+ 		        <columnvalue column="userdefined" boolean="true"/>
+ 		        <columnvalue column="onlinechanges" boolean="true"/>
+ 		        <columnvalue column="changeby" string="MAXADMIN"/>
+ 		        <columnvalue column="changedate" date="sysdate"/>
+ 		        <columnvalue column="masked" boolean="false"/>
+ 		        <columnvalue column="accesstype" number="2"/>
+            </insertrow>
+        </insert>
+    </statements>
+</script>
